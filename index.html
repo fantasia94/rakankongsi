@@ -648,5 +648,80 @@ var elementorFrontendConfig = {"isEditMode":"","is_rtl":"","breakpoints":{"xs":0
 </script>
 <script type='text/javascript' src='https://fantasia94.github.io/rakankongsi/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=2.3.8'></script>
 
+	
+	
+	
+<!-- ========== START NOTIFICATION ========== -->
+	<div id="notification-1" class="notification">			
+		<div class="notification-block">
+			<div class="notification-img">
+				<!-- Your image or icon -->
+				<img style="width: 100%;" src="favicon/apple-icon-60x60.png" class="img-rounded">
+				
+				<!---<i class="fa fa-user" aria-hidden="true"></i> --->
+				<!-- / Your image or icon -->
+			</div>
+			<div class="notification-text-block">
+				<div class="notification-title">
+					<!-- Notification Title -->
+					Komisyen terkini
+					<!-- / Notification Title -->
+				</div>
+				<div class="notification-text"></div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	
+<!-- ========== END NOTIFICATION ========== -->
+
+
+<!-- Fake Notifications jQuery plugin -->
+	<script type="text/javascript" src="notify/jquery.notification-min.js"></script>
+
+<!-- Fake Notifications invoke -->
+	<script>
+		$(document).ready(function() {
+			$('#notification-1').Notification({
+				// Notification varibles
+				Varible1: ["MUHAMMAD SYAWAL AIZAT BIN ABD MALEK", "ZULKEFLEE ZAKARIA", "MOHD RUZAINI BIN MOHAMAD AMIN", "MUHAMMAD AINUL HAKIM", "AMRAN BIN ABU BAKAR","MOHAMMED ARSYAD BIN MOHAMMED SUDIN", "ABDUL RAHMAN", "HASARUDDIN LUDIN", "NOR MD NASIR BIN MAT NOR", "NURSALSHABELLA BINTI SAHIDI", "SITI BALKIS BT AMALLUDIN", "AZMAN BIN MOHAMAD", "NURUL IZZAH", "MUHAMAD KHAIRUDDIN ABDUL KADIR", "NORIZAN BT ABDULLAH", "MOHD SUKRI BIN SAHININ", "MOHD AMIRUDDIN BIN SHAMSUDIN", "FADZILAH", "ZAINAB BINTI ZAKARIA", "RASHIDI AHMAD", "MUHAMAD FARIS BIN ANUA-IZANI", "WAN NUR FARHANI BT MOHD SAUFEE", "MUHAMMAD IRSYAD BIN IDRIS", "NASRUDIN MD KAMIS", "MUHAMAD ALIF BIN ABD HALIM", "MUHAMMAD SHARAFUDDIN BIN SHARTOR BAHARI", "NORDIN BIN MALI@NOORDIN MAHALI", "WAN NORSALMIZA BT WAN SELAMAT", "JUMARI BIN AHMAD", "HAMIZAH", "MOHAMMAD EZAN AIMAN", "MUHAMMAD FIRDAUS", "KATRINJO AJUH", "MOHD ROSMIZA BIN RUSELI", "NOR SAIDIN BIN JAAFAR", "NAZRI", "HASBULLAH BIN ABU KASIM", "SITI NUR ATIQAH BINTI SAADON", "BINSIN GAMPANGANG", "OTHMAN BIN ABU HASAN", "YAKUB DAIL", "KHAIRULANUAR BIN ABAS", "SANNY TAN SHET MING", "AHMAD AZMI BIN AHMAD", "MUHAMMAD IRFAN BIN IBRAHIM", "HANA AHMAD", "MUHAMMAD ZHAFRAN BIN SHARIL", "FAIRUZ REHAN", "SITI AISHAH BINTI CHE ALI", "SURAYA BINTI ZAKARIA"],
+				Varible2: ["RM15.00","RM6.00","RM4.00","RM2.00","RM1.50","RM1.00","RM0.50","RM0.30","RM0.20","RM0.10","RM15.00","RM6.00","RM4.00","RM2.00","RM1.50","RM1.00","RM0.50","RM0.30","RM0.20","RM0.10","RM15.00","RM6.00","RM4.00","RM2.00","RM1.50","RM1.00","RM0.50","RM0.30","RM0.20","RM0.10","RM15.00","RM6.00","RM4.00","RM2.00","RM1.50","RM1.00","RM0.50","RM0.30","RM0.20","RM0.10","RM15.00","RM6.00","RM4.00","RM2.00","RM1.50","RM1.00","RM0.50","RM0.30","RM0.20","RM0.10"],
+				Amount: [15.00, 6.00, 4.00, 2.00, 1.50, 1.00, 0.50, 0.30, 0.20, 0.10, 15.00, 6.00, 4.00, 2.00, 1.50, 1.00, 0.50, 0.30, 0.20, 0.10, 15.00, 6.00, 4.00, 2.00, 1.50, 1.00, 0.50, 0.30, 0.20, 0.10, 15.00, 6.00, 4.00, 2.00, 1.50, 1.00, 0.50, 0.30, 0.20, 0.10, 15.00, 6.00, 4.00, 2.00, 1.50, 1.00, 0.50, 0.30, 0.20, 0.10],
+				Content: '[Varible1] terima [Varible2]',
+				// Timer
+				Show: ['random', 4, 17],
+				Close: 5,
+				Time: [0, 23],
+				// Notification style 
+				LocationTop: [true, '5%'],
+				LocationBottom:[false, '10%'],
+				LocationRight: [false, '10%'],						
+				LocationLeft:[true, '10px'],
+				Background: 'white',
+				BorderRadius: 5,
+				BorderWidth: 1,
+				BorderColor: '#151515',
+				TextColor: 'black',
+				IconColor: 'orange',
+				// Notification Animated   
+				AnimationEffectOpen: 'fadeIn',
+				AnimationEffectClose: 'fadeOut',
+				// Number of notifications
+				Number: 42,
+				// Notification link
+				Link: [true, 'https://eusahawan.pro/ahli/apply.php', '_self']
+			});	
+			
+
+
+			
+			
+		});				
+		
+	</script>	
+	
+	
 </body>
 </html>
