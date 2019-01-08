@@ -1,0 +1,195 @@
+ <!doctype html><html>
+<!-- Mirrored from new.landingi.com/remote-preview-frame/92df685523239f8a076e by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jan 2019 02:09:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><meta name="viewport" content="width=device-width,initial-scale=1" /><title></title><!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext" type="text/css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i&amp;subset=latin,latin-ext" type="text/css" rel="stylesheet"><!--[if lt IE 9]><link href="https://old.assets-landingi.com/bootstrap/css/ie8-grid.css?v=8.9.8" type="text/css" rel="stylesheet"><link href="https://styles.assets-landingi.com/BdafeGbe/preview.css" type="text/css" rel="stylesheet"><![endif]--><link href="../../styles.assets-landingi.com/assets/css/2.10-landend-base.css" type="text/css" rel="stylesheet"><link href="../../styles.assets-landingi.com/BdafeGbe/preview.css" type="text/css" rel="stylesheet"></head><body id="Zcc579e32ab7c2c234c287cbcbc03f3a7639f9f1">
+<div id="VbAH1H7oOcTviNLA3T42vrV7SvyfEpGN" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="E94lJlgpZL6mmTlXaqmnHT2UimVttDk4" class="widget widget-text"><h1></h1><h1></h1><h1>SHOW CUSTOMER <b>THEIR NEED</b></h1></div><div id="lRxGDMCVonplmKOlrsdlGJTXsfx9PDGI" class="widget widget-text"><p></p><p></p><p></p><p>+</p><p></p><p></p><p></p></div><div id="IP85fTR600k2RR6uz3Xv6OnDIXpgZyln" class="widget widget-box"></div><i id="wb7uab7nmSz43uhO6ilhlodUQ0PkdRaT" class="fa fa-gift widget widget-icon"></i><div id="fwNmGTIvCLnqCNHTV0V3ZFRn30SqqGyo" class="widget widget-text"><p></p><p></p><p>3</p><p></p><p></p></div><div id="Mi7F48q5IP2oizEmZruvzP5dbk92qbvi" class="widget widget-text"><p></p><p></p><p></p><p>GIFTS</p><p></p><p></p><p></p></div><div id="L8I9WR68IH1M3sCCVUvvr24h5OTltCLJ" class="widget widget-text"><ul><li>Your value proposition</li><li><span>Strong point</span></li><li>Benefit no. 3</li></ul></div><div id="Zn0MMgJDbxruRWWRQsTafhpcvxHRTEue" class="widget widget-text"><p></p><p></p><p></p><p></p><p>A supporting statement for you value proposition to encourage customers to complete the CTA.</p><p></p><p></p><p></p><p></p></div><img id="mLvoWANDnQ4WDOybXXUfZTPoJ79r1cnh"  width="4" height="3"  class="widget widget-image" data-original="https://images.assets-landingi.com/19fdK0NK/bez_nazwy.png" src="../../images.assets-landingi.com/19fdK0NK/bez_nazwy.png"   alt="" ><img id="OaIOWkgglHAsAiBXiBpSXXMrUmX9KVsr"  width="4" height="3"  class="widget widget-image" data-original="https://images.assets-landingi.com/19fdK0NK/bez_nazwy.png" src="../../images.assets-landingi.com/19fdK0NK/bez_nazwy.png"   alt="" ><img id="Z8EFzRgH2n94TB7JddAUkZ2xlWUXBHk9"  width="663" height="386"  class="widget widget-image" data-original="https://images.assets-landingi.com/5c5cSaEd/img_6.jpg" src="../../images.assets-landingi.com/5c5cSaEd/img_6.jpg"   alt="" >
+        </div>
+    </div>
+</div>
+<div id="JeBA8MQ8nMOPTi3Beit6qxMMaV7Z2nWo" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <a href="#" id="NTEcOrRVnznZwxbzgR2uAZmyu46bwDH5" class="widget widget-button"  version="2" target="_self"><div class="widget-overlay"></div><div id="UTGQQ9r4rw8GFDUqPS1lxPux3C9F1mJE" class="widget widget-text">BUY NOW</div></a><a href="#gilA743Ve93VUSQzvTx7f714AhO53TEU" id="LQeDX2d25SuocuC0WyzhSZodBBJ5tRxT" class="widget widget-button"  version="2" subtype="anchor"><div class="widget-overlay"></div><div id="RKNHCyR2umiT3VSXc8u5A3KeZMPrw1T9" class="widget widget-text">LEARN MORE</div></a><div id="levITtn2LfLN1tTuhx3gVLseCTz9NVcV" class="widget widget-text"><p></p><p></p><p></p><p>PRICE:</p><p></p><p></p><p></p></div><div id="sJQA0Vnza8x02ZiH7bTI8waGTm6TdDW3" class="widget widget-text"><p></p><p></p><p></p><p></p><p>99,00</p><p></p><p></p><p></p><p></p></div>
+        </div>
+    </div>
+</div>
+<div id="gilA743Ve93VUSQzvTx7f714AhO53TEU" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            
+        </div>
+    </div>
+</div>
+<div id="aM6nqg4r1XN1zmMJcUvklcTxv1qswRb6" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="KVcKdKW2bkvm5WmRaQC66lHW3sIvTLns" class="widget widget-text"><h2>As a gift from us<b> you will receive:</b></h2></div>
+        </div>
+    </div>
+</div>
+<div id="ELhAmekIG4wBNtDn8Xulh3f9WOs1c058" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            
+        </div>
+    </div>
+</div>
+<div id="PSDtSVlSG6q5pSTEtWaaFsoE39ippFWz" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="AOpvzlU8QCwgHTcbVw3KQWkoPHVxB8U4" class="widget widget-box"></div><div id="uhwNbMs0L2PaPwbEwWWQTSErz63MoK1n" class="widget widget-text"><p></p><p></p><p></p><p></p><p></p><p>Benefit no. 1 </p><p></p><p></p><p></p><p></p><p></p></div><div id="vi7PpqhIJQTRctlILvIrRZqW80Xim45R" class="widget widget-box"></div><div id="tpP4txnkGaQBSQ3mwHrP9TfWbAAtfwcu" class="widget widget-text"><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>Benefit no. 2 </p><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div><div id="ZpKQ8zeJF6TMElNusHOEc31a45wfiBQR" class="widget widget-box"></div><div id="t7Wa80pTgskAWB1nhGUFXWOUwMVfpE9C" class="widget widget-text"><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>Benefit no. 3 </p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div>
+        </div>
+    </div>
+</div>
+<div id="IRNMsmzzhumLSApw6synQ2Eorr8UIDHP" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            
+        </div>
+    </div>
+</div>
+<div id="korlDxL1uAMeNzU6D8GtfNB7z0tqw9JR" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <a href="#" id="viBaW3e5P7T1SkZBaAvGHB74w2FWpWTF" class="widget widget-button"  version="2" target="_self"><div class="widget-overlay"></div><div id="uEIG16vyNXaZ6yqV1zXRT7ioinWltBhv" class="widget widget-text">BUY NOW</div></a>
+        </div>
+    </div>
+</div>
+<div id="O6Rm2xU1kv90GfWnbffvkfM9TZaahV8i" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            
+        </div>
+    </div>
+</div>
+<div id="DWwWFRHdKAv9vE38Dbe6ipXxXKccpbxx" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            
+        </div>
+    </div>
+</div>
+<div id="Fwkugd1ZMDB9i5iGaxyzEyCeZ3TvueAP" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="ayuAxUOaS0EnzfsuJ2dRn2zlFCu3vLdq" class="widget widget-text"><h2></h2><h2><b>A few words about your product / offer</b><br></h2></div><div id="isb9UfXc0WlaFk8XPWEwBnTufTeOMVgE" class="widget widget-box"></div><a href="#" id="kThscJ6pAgxzwSJOasGKqUwZ95K8AFuy" class="widget widget-button"  version="2" target="_self"><div class="widget-overlay"></div><div id="ca77Xyc35V7E2AZt1klu49atFRWhnXOQ" class="widget widget-text">BUY NOW</div></a><div id="RM4uNZtNQwLKvl0HH8Nkw1BqasmOvTS3" class="widget widget-text"></div><div id="LQrquTT0AZMvPwl3Uf1pVnLw1TIDtMxZ" class="widget widget-text"><h2>Focus on benefits, not features. Explain how it will improve your customer's life or experience.</h2></div>
+        </div>
+    </div>
+</div>
+<div id="rlQqShQel3yTu0nd2TACcRzfKcm9OFSd" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            
+        </div>
+    </div>
+</div>
+<div id="dsheHwyPZkwa5NXuuemgsDE3dyPlTiBb" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            
+        </div>
+    </div>
+</div>
+<div id="GsaS1SzS36OnEHHHURFkXcRHhcHhZFox" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="sroW4V72zDh7BqOrBqCGUJazek7uSsTG" class="widget widget-text"><h2>Your unique <b>selling proposition</b></h2></div>
+        </div>
+    </div>
+</div>
+<div id="frLczoV6TBTUDtm9SQocg3JZItdbG8fP" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <a href="#" id="nlPTPpTgvpt2cF5VuyCoNXChvQ1pcVGb" class="widget widget-button"  version="2" target="_self"><div class="widget-overlay"></div><div id="O4QHcieyO4eE2zctcxiuO0xQ87Eq2A9O" class="widget widget-text">BUY NOW</div></a><img id="BF6oAvsrLgz1sC5afetxoHkHEX2kbgyf"  width="951" height="557"  class="widget widget-image" data-original="https://images.assets-landingi.com/5c5cSaEd/img_6.jpg" src="../../images.assets-landingi.com/5c5cSaEd/img_6.jpg"   alt="" ><div id="SFqgLStmHc60PqHKALpdb8VZwFO36rN7" class="widget widget-box"></div><i id="s53KTw8TcA00gDchDT2UQPfnB3ipFKJK" class="fa fa-truck widget widget-icon"></i><div id="Ztx8baL7FkGMdrF0iySG8FIfuA6fBtF2" class="widget widget-text"><p></p><p></p><p></p><p>FREE</p><p></p><p></p><p></p></div><div id="kftDeQ6ZiKIvtz7eT2rT7kWxLGJQG0eH" class="widget widget-text"><p></p><p></p><p></p><p></p><p>DELIVERY</p><p></p><p></p><p></p><p></p></div>
+        </div>
+    </div>
+</div>
+<div id="WLyrto9t7sILOMcE8qLtHoymt3BKSARz" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            
+        </div>
+    </div>
+</div>
+<div id="U5KcUPz4272IZbLhWV21HeSPzMEqTsL3" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            
+        </div>
+    </div>
+</div>
+<div id="qkQQzecpWcxh0fn0giAkvwgs13NsfN4w" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="UAMcmJSSvVvsIy89MoFZKqOfPRH3hcWv" class="widget widget-text"><p></p><p></p><p></p><p>Encourage customer to click the button</p><p></p><p></p><p></p></div>
+        </div>
+    </div>
+</div>
+<div id="rbw7IosU6OhZ2ZgqNKr2PH4TXI2tJcTO" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            
+        </div>
+    </div>
+</div><script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script type="text/javascript" src="../../old.assets-landingi.com/bootstrap/js/landend.bootstrap.min.js"></script><script type="text/javascript" src="../../old.assets-landingi.com/bootstrap/js/bootbox.min.js"></script><script type="text/javascript" src="../../old.assets-landingi.com/js/landing.js"></script><script type="text/javascript" src="../../old.assets-landingi.com/assets/js/dist/landend/3285/landend.js"></script><script type="text/javascript" src="../../old.assets-landingi.com/assets/js/landend/anchors/v02.js"></script><script type='text/javascript' src='../../old.assets-landingi.com/assets/js/vendor/jquery-form/jquery.form.min.js'></script>
+<script type="text/javascript" src="../../old.assets-landingi.com/assets/js/landend/140618-2/landend.js"></script>
+<script type="text/javascript" src="../../old.assets-landingi.com/assets/js/landend/180918/validation.js"></script><script>
+    (function() {
+        function prevent(event) {
+            alert('Wysyłanie i walidacja formularza nie jest możliwa w podglądzie.');
+            event.preventDefault();
+            return false;
+        }
+        
+        $('form').off('submit').on('submit', prevent);
+        $('input[type=\"file\"]').on('click', prevent); 
+        
+        $(document).on('load', 'script', function () {
+            $('form').off('submit').on('submit', prevent);
+            $('input[type=\"file\"]').on('click', prevent); 
+        });
+    })();
+</script><script src="../../scripts.assets-landingi.com/video-bg/v0.5/videoBackground.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"f1e66e60b0","applicationID":"2520920","transactionName":"MVNVNRYCV0ZZVRZaDggZdgIQClZbF0YDXQQKGUUECQxNUGhEB0UIA0FxEwUOXA==","queueTime":0,"applicationTime":273,"atts":"HRRWQ14YREg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<!-- Mirrored from new.landingi.com/remote-preview-frame/92df685523239f8a076e by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Jan 2019 02:09:44 GMT -->
+</html>
