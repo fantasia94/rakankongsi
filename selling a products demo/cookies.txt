@@ -1,6 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.landingi.com	TRUE	/	FALSE	1999999999	PHPSESSID	79viuqn82allh0go4vnhqlpr40
-.landingi.com	TRUE	/	FALSE	1999999999	referer	DIRECT
-.assets-landingi.com	TRUE	/	FALSE	1999999999	__cfduid	df8b2f8261a2c6a6429447f8fb10ca28c1546913378
-
